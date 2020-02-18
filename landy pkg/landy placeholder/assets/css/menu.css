@@ -3,6 +3,8 @@
 }
 .main-menu {
   z-index: 999;
+  height: 5em;
+  background: #ffffff;
 }
 .menu-bg-overlay {
   background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #ee0979 0%, #ff6a00 100%) repeat scroll 0 0;
@@ -111,7 +113,7 @@ a.navbar-brand {
   padding-right: 0;
 }
 .main-menu-container.tbg.navbar-fixed-top {
-  padding-top: 25px;
+  /* padding-top: 25px; */
   transition: .3s all ease-in-out;
 }
 .main-menu-container.tbg.navbar-fixed-top.menu-bg-overlay {

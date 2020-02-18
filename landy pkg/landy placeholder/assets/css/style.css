@@ -115,6 +115,10 @@ h1,h2,h3,h4,h5,h6 {
 	color: #f11965;
 }
 
+.green{
+	color: #006135;
+}
+
 @-webkit-keyframes video-icon {
 	0% {
 		-webkit-transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
@@ -396,11 +400,11 @@ Start of showcase section
 .showcase-slider .owl-dot {
 	height: 15px;
 	width: 15px;
-	background: -moz-linear-gradient(left, #ee0979 0%, #ff6a00 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, #ee0979), color-stop(100%, #ff6a00));
-	background: -webkit-linear-gradient(left, #ee0979 0%, #ff6a00 100%);
-	background: -o-linear-gradient(left, #ee0979 0%, #ff6a00 100%);
-	background: -ms-linear-gradient(left, #ee0979 0%, #ff6a00 100%);
+	background: -moz-linear-gradient(left, #04653d 0%, #a6ce39  100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, #04653d), color-stop(100%, #a6ce39 ));
+	background: -webkit-linear-gradient(left, #04653d 0%, #a6ce39  100%);
+	background: -o-linear-gradient(left, #04653d 0%, #a6ce39  100%);
+	background: -ms-linear-gradient(left, #04653d 0%, #a6ce39  100%);
 	border-radius: 100%;
 	display: inline-block;
 	margin-right: 10px;
@@ -438,7 +442,7 @@ Start of showcase section
 }
 .showcase-slider .owl-prev,
 .showcase-slider .owl-next span {
-	color: #ee0979;
+	color: #006135;
 }
 .showcase-slider .owl-prev {
 	left: -40px;
@@ -448,11 +452,11 @@ Start of showcase section
 }
 .showcase-slider .owl-prev:hover,
 .showcase-slider .owl-next:hover {
-	background: -moz-linear-gradient(left, #ee0979 0%, #ff6a00 100%);
-	background: -webkit-gradient(left top, right top, color-stop(0%, #ee0979), color-stop(100%, #ff6a00));
-	background: -webkit-linear-gradient(left, #ee0979 0%, #ff6a00 100%);
-	background: -o-linear-gradient(left, #ee0979 0%, #ff6a00 100%);
-	background: -ms-linear-gradient(left, #ee0979 0%, #ff6a00 100%);
+	background: -moz-linear-gradient(left, #04653d  0%, #a6ce39   100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, #04653d ), color-stop(100%, #a6ce39  ));
+	background: -webkit-linear-gradient(left, #04653d  0%, #a6ce39   100%);
+	background: -o-linear-gradient(left, #04653d  0%, #a6ce39   100%);
+	background: -ms-linear-gradient(left, #04653d  0%, #a6ce39   100%);
 }
 .showcase-slider .owl-prev:hover span,
 .showcase-slider .owl-next:hover span {
