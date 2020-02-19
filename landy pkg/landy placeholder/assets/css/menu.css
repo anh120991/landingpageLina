@@ -1,10 +1,19 @@
+#main-menu {
+  background-image: linear-gradient(90deg, #348712, #e3fa5b, #388913, #e3fa5b, #348712);
+  padding-top: 0.3em;
+  padding-bottom: 0.3em;
+}
+
 .main-menu-container {
   min-height: 68px;
+  
 }
 .main-menu {
   z-index: 999;
   height: 5em;
-  background: #ffffff;
+  background-image: linear-gradient(90deg, #6b9207, #afca53, #f0fd9d, #afca53, #6b9207);
+  border-top: 2px solid #96ac4b;
+  border-bottom: 2px solid #96ac4b;
 }
 .menu-bg-overlay {
   background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #ee0979 0%, #ff6a00 100%) repeat scroll 0 0;

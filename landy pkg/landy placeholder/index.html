@@ -35,6 +35,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet">
 	<style type="text/css">
 		.unlimit{
 		    transition: none;
@@ -130,9 +131,116 @@ animation-iteration-count: infinite;
   100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 	</style>
+
+<style>
+		
+		/* The Modal (background) */
+		.modal {
+		  display: none; /* Hidden by default */
+		  position: fixed; /* Stay in place */
+		  z-index: 1; /* Sit on top */
+		  padding-top: 100px; /* Location of the box */
+		  left: 0;
+		  top: 0;
+		  width: 100%; /* Full width */
+		  height: 100%; /* Full height */
+		  overflow: auto; /* Enable scroll if needed */
+		  background-color: rgb(0,0,0); /* Fallback color */
+		  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+		
+		/* Modal Content */
+		.modal-content {
+		  background-color: #fefefe;
+		  margin: auto;
+		  padding: 20px;
+		  border: 1px solid #888;
+		  width: 30%;
+		}
+		
+		/* The Close Button */
+		.close {
+		  color: #aaaaaa;
+		  float: right;
+		  font-size: 28px;
+		  font-weight: bold;
+		}
+		
+		.close:hover,
+		.close:focus {
+		  color: #000;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+
+		.popup-title {
+			font-family: 'Lemonada', cursive;
+			color: #306701;
+		}
+/* 
+		input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+} */
+		</style>
 </head>
 
 <body>
+
+		<div id="myModal" class="modal">
+
+				<!-- Modal content -->
+				<div class="modal-content">
+					<h3 class="popup-title">
+CHÚC MỪNG QUÝ KHÁCH
+<span class="close">&times;</span>
+					</h3>
+				 
+				  <div class="popup-content">
+						<div class="row">
+								<div class="col-md-12 form-group">
+								<h5 id="resultGift"></h5>
+								</div>
+							</div>
+					  <div class="row">
+						  <div class="col-md-12 form-group">
+							  <input type="text" class="form-control" placeholder="Họ và tên (bắt buộc)" />
+						  </div>
+					  </div>
+					  <div class="row">
+							<div class="col-md-12 form-group">
+								<input type="text" class="form-control" placeholder="Số điện thoại (bắt buộc)" />
+							</div>
+						</div>
+						<div class="row">
+								<div class="col-md-12 form-group">
+									<input type="text" class="form-control" placeholder="Họ và tên (bắt buộc)" />
+								</div>
+							</div>
+							<div class="row">
+									<div class="col-md-12 form-group">
+									<select class="form-control"  id="city" name="secCity"><option value="Không chọn">Tỉnh/Thành phố</option><option value="Nước ngoài">Nước ngoài</option><option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option><option value="TP Cần Thơ">TP Cần Thơ</option><option value="TP Hà Nội">TP Hà Nội</option><option value="TP Hải Phòng">TP Hải Phòng</option><option value="TP Đà Nẵng">TP Đà Nẵng</option><option value="An Giang">An Giang</option><option value="Bà Rịa-Vũng Tàu">Bà Rịa-Vũng Tàu</option><option value="Bình Dương">Bình Dương</option><option value="Bình Phước">Bình Phước</option><option value="Bình Thuận">Bình Thuận</option><option value="Bình Định">Bình Định</option><option value="Bạc Liêu">Bạc Liêu</option><option value="Bắc Cạn">Bắc Cạn</option><option value="Bắc Giang">Bắc Giang</option><option value="Bắc Ninh">Bắc Ninh</option><option value="Bến Tre">Bến Tre</option><option value="Cao Bằng">Cao Bằng</option><option value="Cà Mau">Cà Mau</option><option value="Điện Biên">Điện Biên</option><option value="Đắc Lắc">Đắc Lắc</option><option value="Đắc Nông">Đắc Nông</option><option value="Đồng Nai">Đồng Nai</option><option value="Đồng Tháp">Đồng Tháp</option><option value="Gia Lai">Gia Lai</option><option value="Hoà Bình">Hoà Bình</option><option value="Hà Giang">Hà Giang</option><option value="Hà Nam">Hà Nam</option><option value="Hà Tĩnh">Hà Tĩnh</option><option value="Hưng Yên">Hưng Yên</option><option value="Hải Dương">Hải Dương</option><option value="Hậu Giang">Hậu Giang</option><option value="Khánh Hoà">Khánh Hoà</option><option value="Kiên Giang">Kiên Giang</option><option value="Kon Tum">Kon Tum</option><option value="Lai Châu">Lai Châu</option><option value="Long An">Long An</option><option value="Lào Cai">Lào Cai</option><option value="Lâm Đồng">Lâm Đồng</option><option value="Lạng Sơn">Lạng Sơn</option><option value="Nam Định">Nam Định</option><option value="Nghệ An">Nghệ An</option><option value="Ninh Bình">Ninh Bình</option><option value="Ninh Thuận">Ninh Thuận</option><option value="Phú Thọ">Phú Thọ</option><option value="Phú Yên">Phú Yên</option><option value="Quảng Bình">Quảng Bình</option><option value="Quảng Nam">Quảng Nam</option><option value="Quảng Ngãi">Quảng Ngãi</option><option value="Quảng Ninh">Quảng Ninh</option><option value="Quảng Trị">Quảng Trị</option><option value="Sóc Trăng">Sóc Trăng</option><option value="Sơn La">Sơn La</option><option value="Thanh Hóa">Thanh Hóa</option><option value="Thái Bình">Thái Bình</option><option value="Thái Nguyên">Thái Nguyên</option><option value="Thừa Thiên-Huế">Thừa Thiên-Huế</option><option value="Tiền Giang">Tiền Giang</option><option value="Trà Vinh">Trà Vinh</option><option value="Tuyên Quang">Tuyên Quang</option><option value="Tây Ninh">Tây Ninh</option><option value="Vĩnh Long">Vĩnh Long</option><option value="Vĩnh Phúc">Vĩnh Phúc</option><option value="Yên Bái">Yên Bái</option> </select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<p>Xin vui lòng điền đầy đủ thông tin, chúng tôi sẽ gọi ngay cho quý khách.</p>
+									</div>
+								</div>
+				  </div>
+				</div>
+			  
+			  </div>
+
+			  <script>
+			
+// Get the <span> element that closes the modal
+
+
+</script>
+
 	<!-- Start of Header 
 		============================================= -->
 		<header>
@@ -335,47 +443,59 @@ animation-iteration-count: infinite;
 											 */
 											 switch(response.GiftPart.Name){
 												 case 1:
-													 messageResult = messageResult + 'combo mien phi';
+													 messageResult = messageResult + '-50% mỹ phẩm trắng da';
 													 break;
 												 case 2:
-													 messageResult = messageResult + 'vali du lich';
+													 messageResult = messageResult + 'Ưu đãi giá sốc: 599k cho dịch vụ phun mày';
 													 break;
 												 case 3:
-													 messageResult = messageResult + 'mien phi hut mo';
+													 messageResult = messageResult + '-50% cho tất cả dịch vụ';
 													 break;
 												 case 4:
-													 messageResult = messageResult + 'voucher 500';
+													 messageResult = messageResult + '-50% cho dịch vụ nâng mũi';
 													 break;
 												 case 5:
-													 messageResult = messageResult + 'voucher 1 tr';
+													 messageResult = messageResult + '-50% cho tất cả các dịch vụ';
 													 break;
 												 case 6:
-													 messageResult = messageResult + 'voucher 2tr';
+													 messageResult = messageResult + 'Ưu đãi giá sốc: 799k cho dịch vụ giảm béo';
 													 break;
 												 case 7:
-													 messageResult = messageResult + '-30%';
+													 messageResult = messageResult + '-100% cho dịch vụ triệt lông';
 													 break;
 												 case 8:
-													 messageResult = messageResult + '-20';
+													 messageResult = messageResult + '-20% cho tất cả dịch vụ';
 													 break;
 												 case 9:
-													 messageResult = messageResult + '-50';
+													 messageResult = messageResult + '-50% cho tất cả các dịch vụ';
 													 break;
 												case 10:
-													 messageResult = messageResult + 'tang lieu phap';
+													 messageResult = messageResult + 'Ưu đãi giá sốc: 799k cho dịch vụ phun môi';
 													 break;
 												 default :
 													 messageResult = 'Error!';
 													 break;
 											 }
-											 $('#ketqua').html(messageResult);
+											 var modal = document.getElementById("myModal");
+											 $('#resultGift').text(messageResult);
+											 modal.style.display = "block";
+											 var span = document.getElementsByClassName("close")[0];
+											 span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 										 }, 5000);
 									 } else {
 										 var messageResult = "Không thành công!";
 										 // if (response.Status === "Campaign_DoAction_BeLimitedMaximumPlayInDay") {
 										 //     messageResult = "<p>Hôm nay bạn đã tham gia vòng quay may mắn</p> <p class='strong-title'>Vui lòng quay lại sau</p>";
 										 // }
-										 $('#ketqua').html(messageResult);
 										 isBusying = false;
 									 }
 								 }else{
