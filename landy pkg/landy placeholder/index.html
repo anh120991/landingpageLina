@@ -37,155 +37,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Maven+Pro&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lemonada&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cormorant&display=swap" rel="stylesheet">
-	<style type="text/css">
-		.unlimit{
-		    transition: none;
-		    -webkit-animation: rotating 0.6s linear infinite;
-		    -moz-animation: rotating 0.6s linear infinite;
-		    -ms-animation: rotating 0.6s linear infinite;
-		    -o-animation: rotating 0.6s linear infinite;
-		    animation: rotating 0.6s linear infinite;
-		  }
 
-		@-webkit-keyframes rotating
-		/*Safari and Chrome */
-		{
-		  to {
-		    -ms-transform: rotate(0deg);
-		    -moz-transform: rotate(0deg);
-		    -webkit-transform: rotate(0deg);
-		    -o-transform: rotate(0deg);
-		    transform: rotate(0deg);
-		  }
-		  from {
-		    -ms-transform: rotate(360deg);
-		    -moz-transform: rotate(360deg);
-		    -webkit-transform: rotate(360deg);
-		    -o-transform: rotate(360deg);
-		    transform: rotate(360deg);
-		  }
-		}
-		@keyframes rotating {
-		  to {
-		    -ms-transform: rotate(0deg);
-		    -moz-transform: rotate(0deg);
-		    -webkit-transform: rotate(0deg);
-		    -o-transform: rotate(0deg);
-		    transform: rotate(0deg);
-		  }
-		  from {
-		    -ms-transform: rotate(360deg);
-		    -moz-transform: rotate(360deg);
-		    -webkit-transform: rotate(360deg);
-		    -o-transform: rotate(360deg);
-		    transform: rotate(360deg);
-		  }
-		}
-	</style>
-	<style type="text/css">
-		.col-xs-12 {
-		    width: 100%;
-		}
-		.vongxoay-img {
-		    /* background: url('vong-quay-all.png') no-repeat; */
-		    background-position: -5px 41px;
-		    height: 520px;
-		}
-		.vongxoay-img img:nth-child(1) {
-		    position: relative;
-		    margin-top: 80px;
-		}
-		.vongxoay-img img:nth-child(2) {
-			position: absolute;
-    margin: 58px -284px;
-		}
-
-		.control-spin{
-			margin: -40% 40%;
-	position: absolute;
-	/* Start the shake animation and make the animation last for 0.5 seconds */
-	animation: shake 1s;
-
-/* When the animation is finished, start again */
-animation-iteration-count: infinite;
-		}
-
-		.slogan{
-			font-size: 3em;
-			font-family: 'Maven Pro', sans-serif;
-			COLOR: #18734d;
-		}
-
-
-
-@keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  10% { transform: translate(-1px, -2px) rotate(-1deg); }
-  20% { transform: translate(-3px, 0px) rotate(1deg); }
-  30% { transform: translate(3px, 2px) rotate(0deg); }
-  40% { transform: translate(1px, -1px) rotate(1deg); }
-  50% { transform: translate(-1px, 2px) rotate(-1deg); }
-  60% { transform: translate(-3px, 1px) rotate(0deg); }
-  70% { transform: translate(3px, 1px) rotate(-1deg); }
-  80% { transform: translate(-1px, -1px) rotate(1deg); }
-  90% { transform: translate(1px, 2px) rotate(0deg); }
-  100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-	</style>
-
-<style>
-		
-		/* The Modal (background) */
-		.modal {
-		  display: none; /* Hidden by default */
-		  position: fixed; /* Stay in place */
-		  z-index: 1; /* Sit on top */
-		  padding-top: 100px; /* Location of the box */
-		  left: 0;
-		  top: 0;
-		  width: 100%; /* Full width */
-		  height: 100%; /* Full height */
-		  overflow: auto; /* Enable scroll if needed */
-		  background-color: rgb(0,0,0); /* Fallback color */
-		  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-		}
-		
-		/* Modal Content */
-		.modal-content {
-		  background-color: #fefefe;
-		  margin: auto;
-		  padding: 20px;
-		  border: 1px solid #888;
-		  width: 30%;
-		}
-		
-		/* The Close Button */
-		.close {
-		  color: #aaaaaa;
-		  float: right;
-		  font-size: 28px;
-		  font-weight: bold;
-		}
-		
-		.close:hover,
-		.close:focus {
-		  color: #000;
-		  text-decoration: none;
-		  cursor: pointer;
-		}
-
-		.popup-title {
-			font-family: 'Lemonada', cursive;
-			color: #306701;
-		}
-/* 
-		input[type=text] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-} */
-		</style>
 </head>
 
 <body>
@@ -202,7 +54,7 @@ CHÚC MỪNG QUÝ KHÁCH
 				  <div class="popup-content">
 						<div class="row">
 								<div class="col-md-12 form-group">
-								<h5 id="resultGift"></h5>
+								<h4 id="resultGift"></h4>
 								</div>
 							</div>
 					  <div class="row">
@@ -227,10 +79,16 @@ CHÚC MỪNG QUÝ KHÁCH
 								</div>
 								<div class="row">
 									<div class="col-md-12">
-										<p>Xin vui lòng điền đầy đủ thông tin, chúng tôi sẽ gọi ngay cho quý khách.</p>
+										<p class="note">Xin vui lòng điền đầy đủ thông tin, chúng tôi sẽ gọi ngay cho quý khách.</p>
 									</div>
 								</div>
+								<div class="row">
+										<div class="submit-btn text-center mt20">
+												<button type="submit" value="Submit">Submit Now</button>
+											</div>
+								</div>
 				  </div>
+				  <div class="popup-bottom"></div>
 				</div>
 			  
 			  </div>
@@ -670,8 +528,7 @@ window.onclick = function(event) {
 			<div class="container">
 				<div class="row section-content">
 					<div class="section-title text-center pb50">
-						<span class="title-text pink text-uppercase">YOU WILL GET</span>
-						<h1 class="title deep-black pb40">Some Extra Featuresn</h1>
+						<h1 class="title deep-black pb40">Dịch vụ ở LiNa</h1>
 					</div>
 					<!-- //section-title -->
 					<div class="extra-features-content">
@@ -681,15 +538,13 @@ window.onclick = function(event) {
 									<div class="extra-left-content">
 										<div class="extra-icon-text text-left">
 											<div class="features-icon text-center">
-												<i class="orange-gred ti-paint-bucket"></i>
+												<i class="green-green ti-paint-bucket"></i>
 											</div>
-											<div class="features-text pt25">
+											<div class="features-text pt5">
 												<div class="features-text-title text-right pb10">
 													<h3 class="deep-black">Clean Design</h3>
 												</div>
-												<div class="features-text-dec text-right">
-													<span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</span>
-												</div>
+											
 											</div>
 										</div>
 									</div>
@@ -698,15 +553,26 @@ window.onclick = function(event) {
 									<div class="extra-left-content">
 										<div class="extra-icon-text text-left">
 											<div class="features-icon text-center">
-												<i class="orange-gred ti-user"></i>
+												<i class="green-green ti-user"></i>
 											</div>
-											<div class="features-text pt25">
+											<div class="features-text pt5">
 												<div class="features-text-title text-right pb10">
 													<h3 class="deep-black">User Friendly</h3>
 												</div>
-												<div class="features-text-dec text-right">
-													<span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</span>
+												
+											</div>
+										</div>
+									</div>
+									<div class="extra-left-content">
+										<div class="extra-icon-text text-left">
+											<div class="features-icon text-center">
+												<i class="green-green ti-user"></i>
+											</div>
+											<div class="features-text pt5">
+												<div class="features-text-title text-right pb10">
+													<h3 class="deep-black">User Friendly</h3>
 												</div>
+											
 											</div>
 										</div>
 									</div>
@@ -715,15 +581,13 @@ window.onclick = function(event) {
 									<div class="extra-left-content">
 										<div class="extra-icon-text text-left">
 											<div class="features-icon text-center">
-												<i class="orange-gred ti-desktop"></i>
+												<i class="green-green ti-desktop"></i>
 											</div>
-											<div class="features-text pt25">
+											<div class="features-text pt5">
 												<div class="features-text-title text-right pb10">
 													<h3 class="deep-black">Fully Responsive</h3>
 												</div>
-												<div class="features-text-dec text-right">
-													<span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</span>
-												</div>
+											
 											</div>
 										</div>
 									</div>
@@ -734,7 +598,7 @@ window.onclick = function(event) {
 
 							<div class="col-sm-4">
 								<div class="extra-pic text-center">
-									<img src="assets/img/mock-up/extra.png" alt="img">
+									<img src="assets/img/based/services.jpg" alt="img">
 								</div>
 							</div>
 							<!-- /col-sm-6 -->
@@ -744,15 +608,13 @@ window.onclick = function(event) {
 									<div class="extra-left-content">
 										<div class="extra-icon-text text-right">
 											<div class="features-icon text-center">
-												<i class="orange-gred ti-money"></i>
+												<i class="green-green ti-money"></i>
 											</div>
-											<div class="features-text pt25">
+											<div class="features-text pt5">
 												<div class="features-text-title text-left pb10">
 													<h3 class="deep-black">Clean Design</h3>
 												</div>
-												<div class="features-text-dec text-left">
-													<span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</span>
-												</div>
+												
 											</div>
 										</div>
 									</div>
@@ -761,15 +623,13 @@ window.onclick = function(event) {
 									<div class="extra-left-content">
 										<div class="extra-icon-text text-right">
 											<div class="features-icon text-center">
-												<i class="orange-gred ti-eye"></i>
+												<i class="green-green ti-eye"></i>
 											</div>
-											<div class="features-text pt25">
+											<div class="features-text pt5">
 												<div class="features-text-title text-left pb10">
 													<h3 class="deep-black">Retina Ready</h3>
 												</div>
-												<div class="features-text-dec text-left">
-													<span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</span>
-												</div>
+												
 											</div>
 										</div>
 									</div>
@@ -778,15 +638,13 @@ window.onclick = function(event) {
 									<div class="extra-left-content">
 										<div class="extra-icon-text text-right">
 											<div class="features-icon text-center">
-												<i class="orange-gred ti-comment-alt"></i>
+												<i class="green-green ti-comment-alt"></i>
 											</div>
-											<div class="features-text pt25">
+											<div class="features-text pt5">
 												<div class="features-text-title text-left pb10">
 													<h3 class="deep-black">24/7 Support</h3>
 												</div>
-												<div class="features-text-dec text-left">
-													<span>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt.</span>
-												</div>
+												
 											</div>
 										</div>
 									</div>
@@ -814,14 +672,14 @@ window.onclick = function(event) {
 						<div class="col-md-4">
 							<div class="testimonial-name-designation">
 								<div class="quate-icon">
-									<span class="orange-gred ti-quote-left"></span>
+									<span class="green-green ti-quote-left"></span>
 								</div>
 								<!-- //icon -->
 								<div class="testimonial-text">
 									<span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehender.</span>
 								</div>
 								<!-- //text -->
-								<div class="testimonial-name-des  pt25">
+								<div class="testimonial-name-des  pt5">
 									<div class="testimonial-pic">
 										<img src="assets/img/based/kh1.png" alt="img">
 									</div>
@@ -841,14 +699,14 @@ window.onclick = function(event) {
 						<div class="col-md-4">
 							<div class="testimonial-name-designation">
 								<div class="quate-icon">
-									<span class="orange-gred ti-quote-left"></span>
+									<span class="green-green ti-quote-left"></span>
 								</div>
 								<!-- //icon -->
 								<div class="testimonial-text">
 									<span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt .</span>
 								</div>
 								<!-- //text -->
-								<div class="testimonial-name-des  pt25">
+								<div class="testimonial-name-des  pt5">
 									<div class="testimonial-pic">
 										<img src="assets/img/based/kh2.png" alt="img">
 									</div>
@@ -869,14 +727,14 @@ window.onclick = function(event) {
 						<div class="col-md-4">
 							<div class="testimonial-name-designation">
 								<div class="quate-icon">
-									<span class="orange-gred ti-quote-left"></span>
+									<span class="green-green ti-quote-left"></span>
 								</div>
 								<!-- //icon -->
 								<div class="testimonial-text">
 									<span>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehender.</span>
 								</div>
 								<!-- //text -->
-								<div class="testimonial-name-des  pt25">
+								<div class="testimonial-name-des  pt5">
 									<div class="testimonial-pic">
 										<img src="assets/img/based/kh3.png" alt="img">
 									</div>
@@ -1017,7 +875,7 @@ window.onclick = function(event) {
 										<form action="#" method="get">
 											<div class="newsletter-email">
 												<input type="email" class="" >
-												<button type="submit" value="Submit"><span class="orange-gred ti-arrow-right"></span></button>
+												<button type="submit" value="Submit"><span class="green-green ti-arrow-right"></span></button>
 											</div>
 										</form>
 									</div>

@@ -235,6 +235,30 @@ Author:        HTMLmate
 	.blog-text-pic {
 		padding-bottom: 20px;
 	}
+
+	.main-menu .navbar>.container .navbar-brand, .main-menu .navbar>.container-fluid .navbar-brand {
+		padding: 0;
+	}
+	.main-menu-container.tbg.navbar-fixed-top.menu-bg-overlay a.navbar-brand.text-uppercase {
+		padding-top: 1px;
+	}
+
+	.navbar-brand{
+		margin-top: -7px;
+	}
+	.slogan{
+		font-size: 1em;
+		margin-top: -10px;
+	}
+	.control-spin {
+		margin: -77% 43%;
+	} 
+	.vtaui-btn-blue{
+		margin-left: -15px;
+	}
+	.modal-content{
+		width: 100%;
+	}
 }
 @media screen and (max-width: 375px) { 
 	.banner-slide-area {
@@ -242,5 +266,32 @@ Author:        HTMLmate
 	}
 	.banner-slide-area .owl-controls {
 		display: none;
+	}
+	.main-menu-container.tbg.navbar-fixed-top.menu-bg-overlay a.navbar-brand.text-uppercase {
+		padding-top: 1px;
+	}
+
+	.navbar-brand{
+		margin-top: -7px;
+	}
+	.slogan{
+		font-size: 1em;
+		margin-top: -10px;
+	}
+
+	.main-menu .navbar>.container .navbar-brand, .main-menu .navbar>.container-fluid .navbar-brand {
+		padding: 0;
+	}
+	.vtaui-btn-blue{
+		margin-left: -20px;
+	}
+	.control-spin{
+		margin: -95% 40%;
+	}
+	.section-title .title{
+		font-size: 35px;
+	}
+	.modal-content{
+		width: 100%;
 	}
 }
