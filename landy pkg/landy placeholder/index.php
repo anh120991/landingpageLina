@@ -940,8 +940,27 @@ window.onclick = function(event) {
 		<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
 		<!-- Include script.js-->
 		<script type="text/javascript" src="assets/js/script.js"></script>
+		<script>
+	$(document).ready(function(){
+    $('button[type=submit]').click(function(){
+        var clickBtnValue = $(this).val();
+        var ajaxurl = 'ajax.php',
+		data =  {'action': clickBtnValue};
+		
+		$.ajax({
+  type: "POST",
+  url: ajaxurl,
+  data: {'action': clickBtnValue},
+  success: function(msg){
+        alert( "Data Saved: " + msg );
+  },
+  error: function(XMLHttpRequest, textStatus, errorThrown) {
+     alert("some error");
+  }
+});
 
+    });
+});
+</script>
 	</body>
 	</html>
-
-	
