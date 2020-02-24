@@ -358,7 +358,7 @@ Start of features section
 
 }
 .features-text-title h3 {
-	font-size: 26px;
+	font-size: 18px;
 }
 .features-icon {
 	height: 120px;
@@ -390,9 +390,10 @@ Start of features section
 .features-icon:after,
 .extra-features-section .extra-left .features-icon:after,
 .extra-features-section .extra-right .features-icon:after  {
-	background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8dc63f   0%, #4d6730   100%) repeat scroll 0 0;
-	background: rgba(0, 0, 0, 0) linear-gradient(to right, #8dc63f   0%, #4d6730   100%) repeat scroll 0 0;
-
+	/* background: rgba(0, 0, 0, 0) -webkit-linear-gradient(left, #8dc63f   0%, #4d6730   100%) repeat scroll 0 0;
+	background: rgba(0, 0, 0, 0) linear-gradient(to right, #8dc63f   0%, #4d6730   100%) repeat scroll 0 0; */
+background: #fff;
+opacity: 0.4;
 }
 .features-text-dec {
 	max-width: 350px;
@@ -401,7 +402,7 @@ Start of features section
 }
 .features-text-icon:hover .features-icon:after,
 .extra-icon-text:hover .features-icon:after {
-	opacity: 1;
+	opacity: 0.5;
 	transform: scale(1);
 }
 .features-text-icon:hover i,
@@ -436,8 +437,18 @@ Start of about section
 }
 .about-left-img {
 	max-width: 370px;
-	margin: 0px auto;
 }
+.about-left-img img {
+	box-shadow: 2px 2px 2px #5a5a5a;
+    border-radius: 5px;
+}
+
+.title-dec{
+	color: #fff;
+    font-size: 1.2em;
+    font-family: 'Quicksand';
+}
+
 /* Zooming */
 .zooming {
 	-moz-animation: zooming 18s infinite both;
@@ -466,8 +477,8 @@ Start of extra features
 }
 .extra-features-section .extra-left .features-icon,
 .extra-features-section .extra-right .features-icon {
-	width: 40px;
-	height: 40px;
+	width: 70px;
+	height: 70px;
 	line-height: 50px;
 	float: right;
 	box-shadow: none;
@@ -1101,3 +1112,81 @@ End of blog area section
 	background: #587242;
 }
 
+#testimonial .testimonial-text {
+	font-family: 'Quicksand', ;
+}
+
+.dvlankim {
+	background: url(../img/services/lankim.png) no-repeat;
+}
+
+.dvphikim {
+	background: url(../img/services/phikimnano.png) no-repeat;
+}
+
+.dvphikim {
+	background: url(../img/services/phikimnano.png) no-repeat;
+}
+
+.dvpeelsinhoc {
+	background: url(../img/services/peelhanquoc.png) no-repeat;
+}
+
+
+.dvtrehoada {
+	background: url(../img/services/chamsoctrehoada.png) no-repeat;	
+}
+
+.dvdieutrimun{
+	background: url(../img/services/dieutrimun.png) no-repeat;	
+}
+
+.dvorganic {
+	background: url(../img/services/chamsocdaoganic.png) no-repeat;	
+}
+
+.dieutrinam {
+	background: url(../img/services/dieutrinam.png) no-repeat;	
+}
+
+.dvtrietlong {
+	background: url(../img/services/trietlong.png) no-repeat;
+}
+
+.dvgiammo {
+	background: url(../img/services/giammo.png) no-repeat;
+}
+.dvmassagebody {
+	background: url(../img/services/massabody.png) no-repeat;
+}
+
+.dvtamtrang {
+	background: url(../img/services/tamtrang.png) no-repeat;
+}
+
+.dvthunhoquangnguc {
+	background: url(../img/services/thunhoquangnguc.png) no-repeat;
+}
+
+.white {
+color: #ffffff;
+}
+
+.about-section-content {
+	background: #ffffff9c;
+    border: 2px solid #c6e74e;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #2b2b2b;
+}
+
+.deep-green {
+    color: #004801;
+}
+
+
+.light-green{ color: #ebf997;}
+
+.dark-green {
+	color: #adc850;
+}
