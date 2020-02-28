@@ -284,7 +284,7 @@ CHÚC MỪNG QUÝ KHÁCH
 					 };
 					</script>
 					<script type="text/javascript">
-			 
+			  var modal = document.getElementById("myModal");
 					 var isBusying = false;
 					 function quay() {
 						 if (!isBusying) {
@@ -361,7 +361,7 @@ CHÚC MỪNG QUÝ KHÁCH
 													 messageResult = 'Error!';
 													 break;
 											 }
-											 var modal = document.getElementById("myModal");
+											
 											 $('#resultGift').text(messageResult);
 											 modal.style.display = "block";
 											 var span = document.getElementsByClassName("close")[0];
@@ -1000,6 +1000,7 @@ window.onclick = function(event) {
 		  },
 		  error: function(XMLHttpRequest, textStatus, errorThrown) {
 			 alert("some error");
+			 $('.shadow').attr('style','display: none');
 		  }
 		});
 
