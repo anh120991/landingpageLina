@@ -39,10 +39,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Cormorant&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 	
+<style>
 
+</style>
 </head>
 
 <body>
+<div class="shadow" style="display: none;">
+<div class="loading-spinner"></div>
+</div>
+
 
 		<div id="myModal" class="modal">
 
@@ -959,6 +965,7 @@ window.onclick = function(event) {
 		<script type="text/javascript" src="assets/js/script.js"></script>
 		<script>
 	 $('button[type=submit]').click(function(){
+		$('.shadow').attr('style','display: block');
 		$('input').removeClass('error');
 		$('#errorResult').html("");
         var ajaxurl = 'email.php';
@@ -987,7 +994,9 @@ window.onclick = function(event) {
 		  url: ajaxurl,
 		  data: data,
 		  success: function(msg){
-				alert( "Data Saved: " + msg );
+				alert(msg );
+				modal.style.display = "none";
+				$('.shadow').attr('style','display: none');
 		  },
 		  error: function(XMLHttpRequest, textStatus, errorThrown) {
 			 alert("some error");
